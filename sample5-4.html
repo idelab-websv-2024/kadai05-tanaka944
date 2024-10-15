@@ -28,9 +28,13 @@
 		  var row = document.createElement('tr');
 		  // row の中を uid, name という ID のエレメントから作っておいて……
 
-		  var uid = document.createElement('td');
+		      var uid = document.createElement('td');
           uid.innerHTML = document.getElementById('uid').value;
           row.appendChild( uid );
+          var uname = document.createElement('td');
+          uname.innerHTML = document.getElementById('name').value;
+          row.appendChild( uname );
+
 
 		  t.appendChild(row);
       }
