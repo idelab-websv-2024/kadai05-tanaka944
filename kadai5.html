@@ -9,6 +9,9 @@
       {
 		  var bookmark = document.getElementById('bookmark');
 		  var row = document.createElement('li');
+      row.innerHTML = document.getElementById('linkname').value;
+      bookmark.appendChild( row );
+
 		  // 課題：
 		  // row の中に id:linkname のテキストを入れてから
 		  // bookmark に appendChild しなさい。
